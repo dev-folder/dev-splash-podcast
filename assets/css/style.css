@@ -1,0 +1,296 @@
+/*
+  Theme: ImSoFunky! Podcast Design
+*/
+
+*{margin:0; padding: 0; box-sizing: border-box;}
+
+body{font-family: sans-serif;}
+
+header{background:#7016cb; z-index:2; padding:0; position: relative; display: block; height:100vh; width:100%;}
+header h1{width:50%; margin:2%; position: absolute; top: 10%; left: 2%; font-size: 22pt; text-transform: uppercase; line-height: 33pt; letter-spacing:-0pt; color:#fff;}
+header .pink-box{background-color:#cb16b3; width: 90%; z-index:6;}
+header img.logo{width:120px; margin:4%;}
+header img.logo:hover{filter: invert(1);}
+header img.phone{width:100%; display:block; z-index:999;}
+
+.custom-shape-divider-top-1596537588 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color:#141414;
+  z-index:2;
+}
+
+.custom-shape-divider-top-1596537588 svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 110px;
+}
+
+.custom-shape-divider-top-1596537588 .shape-fill {
+  fill: #7016cb;
+}
+
+a.ctabutton { z-index: 5; font-family: 'Raleway', sans-serif; font-size: 18px; color: #fff; display: inline-block; text-decoration: none; padding: -1em; background: #cb16b3; overflow: hidden; padding-left: 1em; position: absolute;  top: 68%;  left: 8%;  border:none; }
+a.ctabutton:after { z-index: 5; display: inline-block; background: #e23ecc; content: "»"; position: relative; margin-left: 1em; padding: .6em 1em; }
+a.ctabutton:hover {background: #e23ecc; text-decoration: none; color: #fff;}
+
+main {margin:0 auto; width: 100%;}
+main h2{text-align: center; text-transform: uppercase; font-size:14pt;}
+main p{margin-bottom:5%;}
+
+/* services*/
+.services{}
+
+/* Podcast design section */
+.podcast-design{width:100%; margin:0 auto; padding:0; color: #f4f4f4; position: relative;}
+.podcast-design h2{font-size:27pt; font-weight:bold; text-align: center; display: block; background-color: #141414;}
+.cover-content{background: #e23ecc; margin:0; padding:0 5%; color: #f4f4f4;}
+.cover-content h2{font-size:27pt; font-weight:bold; text-align: right; display: block;}
+.cover-content p{display: inline-block; width: 40%; margin: 5%;}
+.cover-content img{}
+.cover-content button{color: #000;}
+
+.carousel {
+  background: #141414; /* Old browsers */
+  background: -moz-linear-gradient(top,  #141414 0%, #141414 62%, #666666 81%, #7c7c7c 91%, #666666 100%);
+  background: -webkit-linear-gradient(top,  #141414 0%,#141414 62%,#666666 81%,#7c7c7c 91%,#666666 100%);
+  background: linear-gradient(to bottom,  #141414 0%,#141414 62%,#666666 81%,#7c7c7c 91%,#666666 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#666666',GradientType=0 );
+  padding-bottom:5%;
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 200px;
+  margin:10% 0;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 110%;
+  max-height: 110%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+-webkit-box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
+box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
+        }
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 60%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0;}
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+
+
+
+
+
+.custom-shape-divider-bottom-1596556625 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1596556625 svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 113px;
+}
+
+.custom-shape-divider-bottom-1596556625 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1596556625 svg {
+      width: calc(133% + 1.3px);
+      height: 52px;
+  }
+}
+
+
+/* Design Services Footer svg */
+.custom-shape-divider-bottom-1596625902 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1596625902 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 63px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1596625902 .shape-fill {
+  fill: #e23ecc;
+}
+
+
+/* logo design section */
+.logo-design{background: #cb16b3; width:100%;}
+
+/* SVG design for logo rop section*/
+.custom-shape-divider-top-1596628003 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background:blue;
+}
+
+.custom-shape-divider-top-1596628003 svg {
+  position: relative;
+  display: block;
+  width: calc(115% + 1.3px);
+  height: 76px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1596628003 .shape-fill {
+  fill: #blue;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1596628003 svg {
+      width: calc(227% + 1.3px);
+      height: 76px;
+  }
+}
+
+
+
+
+
+/* website design section */
+.website-design{ display: none;}
+
+/* social media branding section */
+.social-media-branding{background: #e23ecc; width:100%; padding:10% 5%;}
+
+.custom-shape-divider-top-1596556802 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: tomato;
+}
+
+.custom-shape-divider-top-1596556802 svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 113px;
+}
+
+.custom-shape-divider-top-1596556802 .shape-fill {
+  fill: #000;
+}
+
+/* Work Flow Section*/
+.workflow{width:90%; margin:0 auto; vertical-align:top;}
+.wf-section{ width: 30%; margin:0 1.3%; display: inline-block; text-align: center; vertical-align:top;}
+.wf-section h3{ width: 100%; font-size: 12pt;}
+.wf-section img{ width: 60%; margin: 10% 0;}
+.wf-section p{ width: 100%; font-size: 10pt; line-height: 13pt;}
+
+/* Contact Area */
+.contact-area{text-align: center; background-color: #f4f4f4; width:100%; padding:10% 0;}
+.contact-area h2{ line-height:20pt; font-size: 18pt;}
+.contact-area button{margin:5%; padding: 3% 8%; border-radius: 7pt; border:none; background-color: #7016cb; color: #fff;}
+.contact-area button:hover{background-color: #4b197c;}
+
+.contact-pop{display:none;}
+
+
+/* packages section */
+.packages{ width:90%; margin:0 auto;}
+.package{background:#f4f4f4; width: 30%; margin: 0.5%; display: inline-block; border-radius: 7pt; vertical-align: top;}
+.package h3{padding:15% 5%; margin: 0; border-radius: 7pt 7pt 0 0; background-color: #7016cb; text-align: center; font-size: 12pt; color: #fff; text-transform: uppercase; letter-spacing: 0pt;}
+.package ul{padding:10% 5%; margin: 0; list-style: none; font-size:9pt;}
+.package ul li{padding:5% 2%; margin:0; border-bottom: 1px #999 solid; text-align: center;}
+.package ul li:last-child{padding:5% 0; margin:0; border-bottom:none; text-align: center;}
+.price{font-weight:bold; font-size:12pt; text-align: center;}
+.package button{padding:15% 5%; margin: 0; width:100%; font-size:10pt; font-weight:bold; letter-spacing: -0pt; color: #fff; background-color: #000; border-radius: 0 0 7pt 7pt; border:0;}
+.package button:hover{background-color: #7016cb;}
