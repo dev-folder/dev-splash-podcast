@@ -7,6 +7,9 @@
 body{font-family: sans-serif;}
 h2{font-size:27pt; font-weight:bold;}
 
+button{padding: 3% 8%; border-radius: 7pt; border:none; color: #fff; cursor: pointer;}
+button:hover{}
+
 header{background:#7016cb; z-index:2; padding:0; position: relative; display: block; height:100vh; width:100%;}
 header h1{width:50%; margin:2%; position: absolute; top: 10%; left: 2%; font-size: 22pt; text-transform: uppercase; line-height: 33pt; letter-spacing:-0pt; color:#fff;}
 header .pink-box{background-color:#cb16b3; width: 90%; z-index:6;}
@@ -44,17 +47,21 @@ main {margin:0 auto; width: 100%;}
 main h2{text-align: center; text-transform: uppercase;}
 main p{margin-bottom:5%;}
 
-/* services*/
-.services{}
-
 /* Podcast design section */
 .podcast-design{width:100%; margin:0 auto; padding:0; color: #f4f4f4; position: relative;}
 .podcast-design h2{text-align: center; display: block; background-color: #141414;}
-.cover-content{background: #e23ecc; margin:0; padding:0; color: #f4f4f4;}
-.cover-content h2{font-size:27pt; font-weight:bold; text-align: right; margin-right:3%; display: block;}
-.cover-content p{display: inline-block; width: 40%; margin: 5%;}
-.cover-content img{}
-.cover-content button{color: #000;}
+
+.cover-content{background: #e23ecc; margin:0; padding:0 5% 0 0; color: #f4f4f4; text-align: right;}
+.cover-content img{ z-index:1; transform: rotate(-9deg); position:absolute; left:-20px; width:50%; padding-top:35%; -webkit-transform: rotate(-9deg);-moz-transform: rotate(-9deg);-ms-transform: rotate(-9deg);-o-transform: rotate(-9deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  filter: drop-shadow(-25px 25px 90px #821378); -webkit-filter: drop-shadow(-25px 25px 90px #821378); -moz-filter: drop-shadow(-25px 25px 90px #821378); z-index:1;}
+
+.cover-content h2{font-size:27pt; font-weight:bold; text-align: right; z-index:5;}
+.cover-content h3{text-transform: uppercase; font-size:10pt; letter-spacing:0.5pt; margin-top:7%; background-color: #000; padding:2% 5%; display: inline-block; border-radius: 5pt;  z-index:5;}
+.cover-content p{display: inline-block; margin: 5% 0;  z-index:5;}
+.cover-content ul{margin:0;  z-index:5; margin:0; color:black;}
+.cover-content li{margin:3% 0; list-style: square; font-size:15pt;}
+.cover-content button{background: #f4f4f4; /* #f7a626 */ color:#7016cb; font-weight:bold; font-size:11pt; text-transform: uppercase; text-align: right;  z-index:5; padding: 2.5% 5%; margin:4%;}
+.cover-content button:hover{background: #000;}
+
 
 .carousel {
   background: #141414; /* Old browsers */
@@ -82,8 +89,8 @@ main p{margin-bottom:5%;}
 
 .carousel-cell img {
   display: block;
-  max-width: 110%;
-  max-height: 110%;
+  max-width: 100%;
+  max-height: 100%;
   /* dim unselected */
   opacity: 0.7;
   -webkit-transform: scale(0.85);
@@ -143,13 +150,6 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
 .flickity-prev-next-button:disabled {
   display: none;
 }
-
-.pod-example{transform: rotate(-9deg); width:50%; position: absolute; left:-3px;  -webkit-transform: rotate(-9deg);-moz-transform: rotate(-9deg);-ms-transform: rotate(-9deg);-o-transform: rotate(-9deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
-
-.work-list{width: 40%; position: absolute; right: 0; margin:3% 3% 0 0;}
-.work-list ul{}
-.work-list li{margin:5% 0;}
-
 
 .custom-shape-divider-bottom-1596556625 {
   position: absolute;
@@ -212,9 +212,11 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
 
 
 /* logo design section */
-.logo-design{background: #7016cb; width:100%; position: relative;}
-.logo-design h2{padding-top:15%; color: #f4f4f4; text-align: left;}
-.logo-design p{padding-bottom:15%; width: 80%; text-align: right;}
+.logo-design{background: #7016cb; width:100%; position: relative; padding:0 0 90% 0;}
+.logo-design h2{padding:25% 0 0 5%; width: 80%; line-height: 28pt; color: #f4f4f4; text-align: left;}
+.logo-design p{padding:5% 0; width: 80%; text-align: right;}
+.logo-design .logo-bg{filter: drop-shadow(-25px 25px 60px #000000); -webkit-filter: drop-shadow(-25px 25px 60px #000000); -moz-filter: drop-shadow(-25px 25px 60px #000000); z-index:1; }
+.logo-design img{width: 50%; height:auto; position: absolute; top:50%; right: 0px; z-index:1; clip-path: polygon(61% 0, 100% 2%, 100% 95%, 58% 100%, 0 65%, 11% 23%); }
 
 /* SVG design for logo Top section*/
 .custom-shape-divider-top-1596636791 {
@@ -225,6 +227,7 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  z-index: 2;
 }
 
 .custom-shape-divider-top-1596636791 svg {
@@ -255,6 +258,7 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  z-index: 2;
 }
 
 .custom-shape-divider-bottom-1596637037 svg {
