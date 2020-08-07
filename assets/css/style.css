@@ -5,39 +5,24 @@
 *{margin:0; padding: 0; box-sizing: border-box;}
 
 body{font-family: sans-serif;}
-h2{font-size:27pt; font-weight:bold;}
+
+p, ul{font-family: 'Lato', sans-serif;}
+h1, h2,h3{font-family: 'Montserrat', sans-serif; font-weight: normal; letter-spacing:1pt;}
+h2{font-size:27pt;}
 
 button{padding: 3% 8%; border-radius: 7pt; border:none; color: #fff; cursor: pointer;}
 button:hover{}
 
 header{background:#7016cb; z-index:2; padding:0; position: relative; display: block; height:100vh; width:100%;}
-header h1{width:50%; margin:2%; position: absolute; top: 10%; left: 2%; font-size: 22pt; text-transform: uppercase; line-height: 33pt; letter-spacing:-0pt; color:#fff;}
+header h1{width:50%; margin:2%; position: absolute; top: 10%; left: 2%; font-size: 19pt; text-transform: uppercase; line-height: 33pt; color:#fff;}
 header .pink-box{background-color:#cb16b3; width: 90%; z-index:6;}
 header img.logo{width:120px; margin:4%;}
 header img.logo:hover{filter: invert(1);}
-header img.phone{width:100%; display:block; z-index:999;}
+header img.phone{width:100%; display:block; z-index:40;}
 
-.custom-shape-divider-top-1596537588 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  background-color:#141414;
-  z-index:2;
-}
-
-.custom-shape-divider-top-1596537588 svg {
-  position: relative;
-  display: block;
-  width: calc(104% + 1.3px);
-  height: 110px;
-}
-
-.custom-shape-divider-top-1596537588 .shape-fill {
-  fill: #7016cb;
-}
+.custom-shape-divider-top-1596537588 { position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; background-color:#141414; z-index:2; }
+.custom-shape-divider-top-1596537588 svg { position: relative; display: block; width: calc(104% + 1.3px); height: 110px;}
+.custom-shape-divider-top-1596537588 .shape-fill { fill: #7016cb;}
 
 a.ctabutton { z-index: 5; font-family: 'Raleway', sans-serif; font-size: 18px; color: #fff; display: inline-block; text-decoration: none; padding: -1em; background: #cb16b3; overflow: hidden; padding-left: 1em; position: absolute;  top: 68%;  left: 8%;  border:none; }
 a.ctabutton:after { z-index: 5; display: inline-block; background: #e23ecc; content: "»"; position: relative; margin-left: 1em; padding: .6em 1em; }
@@ -47,6 +32,13 @@ main {margin:0 auto; width: 100%;}
 main h2{text-align: center; text-transform: uppercase;}
 main p{margin-bottom:5%;}
 
+
+
+/*****************************************/
+/************ PODCAST SECTION ************/
+/*****************************************/
+
+
 /* Podcast design section */
 .podcast-design{width:100%; margin:0 auto; padding:0; color: #f4f4f4; position: relative;}
 .podcast-design h2{text-align: center; display: block; background-color: #141414;}
@@ -54,7 +46,7 @@ main p{margin-bottom:5%;}
 .cover-content{background: #e23ecc; margin:0; padding:0 5% 0 0; color: #f4f4f4; text-align: right;}
 .cover-content img{ z-index:1; transform: rotate(-9deg); position:absolute; left:-20px; width:50%; padding-top:35%; -webkit-transform: rotate(-9deg);-moz-transform: rotate(-9deg);-ms-transform: rotate(-9deg);-o-transform: rotate(-9deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  filter: drop-shadow(-25px 25px 90px #821378); -webkit-filter: drop-shadow(-25px 25px 90px #821378); -moz-filter: drop-shadow(-25px 25px 90px #821378); z-index:1;}
 
-.cover-content h2{font-size:27pt; font-weight:bold; text-align: right; z-index:5;}
+.cover-content h2{font-size:27pt; text-align: right; z-index:5;}
 .cover-content h3{text-transform: uppercase; font-size:10pt; letter-spacing:0.5pt; margin-top:7%; background-color: #000; padding:2% 5%; display: inline-block; border-radius: 5pt;  z-index:5;}
 .cover-content p{display: inline-block; margin: 5% 0;  z-index:5;}
 .cover-content ul{margin:0;  z-index:5; margin:0; color:black;}
@@ -126,30 +118,16 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
 }
 
 /* buttons, no circle */
-.flickity-prev-next-button {
-  width: 60px;
-  height: 60px;
-  background: transparent;
-  opacity: 0.6;
-}
-.flickity-prev-next-button:hover {
-  background: transparent;
-  opacity: 1;
-}
+.flickity-prev-next-button { width: 60px; height: 60px; background: transparent; opacity: 0.6; }
+.flickity-prev-next-button:hover { background: transparent; opacity: 1; }
 /* arrow color */
-.flickity-prev-next-button .arrow {
-  fill: white;
-}
-.flickity-prev-next-button.no-svg {
-  color: white;
-}
+.flickity-prev-next-button .arrow { fill: white; }
+.flickity-prev-next-button.no-svg { color: white; }
 /* closer to edge */
 .flickity-prev-next-button.previous { left: 0;}
 .flickity-prev-next-button.next { right: 0; }
 /* hide disabled button */
-.flickity-prev-next-button:disabled {
-  display: none;
-}
+.flickity-prev-next-button:disabled { display: none; }
 
 .custom-shape-divider-bottom-1596556625 {
   position: absolute;
@@ -207,16 +185,17 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
 
 
 
-
-
-
+/*****************************************/
+/************* LOGO SECTION **************/
+/*****************************************/
 
 /* logo design section */
 .logo-design{background: #7016cb; width:100%; position: relative; padding:0 0 90% 0;}
 .logo-design h2{padding:25% 0 0 5%; width: 80%; line-height: 28pt; color: #f4f4f4; text-align: left;}
-.logo-design p{padding:5% 0; width: 80%; text-align: right;}
+.logo-design p{padding:5% 0; width: 80%; text-align: left; margin-left:5%;}
 .logo-design .logo-bg{filter: drop-shadow(-25px 25px 60px #000000); -webkit-filter: drop-shadow(-25px 25px 60px #000000); -moz-filter: drop-shadow(-25px 25px 60px #000000); z-index:1; }
 .logo-design img{width: 50%; height:auto; position: absolute; top:50%; right: 0px; z-index:1; clip-path: polygon(61% 0, 100% 2%, 100% 95%, 58% 100%, 0 65%, 11% 23%); }
+.logo-design button{background: #f4f4f4; /* #f7a626 */ color:#7016cb; font-weight:bold; font-size:11pt; text-transform: uppercase; text-align: right;  z-index:5; padding: 2.5% 5%; margin:2%;}
 
 /* SVG design for logo Top section*/
 .custom-shape-divider-top-1596636791 {
@@ -284,13 +263,42 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
 /* website design section */
 .website-design{ display: none;}
 
-/* social media branding section */
-.social-media-branding{background: #e23ecc; width:100%; padding:10% 5%; position: relative;}
 
 
-/* Work Flow Section*/
-.workflow{width:100%; position: relative;}
-.workflow h2{ margin:5% 0;}
+
+
+
+
+
+/*****************************************/
+/************ SOCIAL SECTION *************/
+/*****************************************/
+
+.social-media-branding {
+  background: #e23ecc;
+  width:100%; 
+  padding:10% 5%; 
+  position: relative; 
+}
+.social-media-branding h2{margin-bottom: 8%;}
+.social-media-branding h3{margin-top: 8%;}
+.social-media-branding ul{width: 80%; margin: 0 auto;}
+.social-media-branding li{margin: 5% 0;}
+.social-media-branding p{}
+.social-media-branding img{width: 30px; height:auto; margin:2% 2% 0 2%; text-align: center; filter: invert(1);}
+.social-media-branding img:first-child{margin:2% 2% 0 0;}
+.social-media-branding img:last-child{margin:2% 0 0 2%;}
+.social-media-branding button{text-align: center; background-color: #7016cb; margin:5% 0; text-align: center;}
+
+
+
+
+
+
+
+/*****************************************/
+/************* FLOW SECTION **************/
+/*****************************************/
 
 .custom-shape-divider-top-1596633932 {
   position: absolute;
@@ -321,9 +329,12 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
   }
 }
 
-.wf-section{ width: 30%; margin:0 1.3% 20% 1.3%; display: inline-block; text-align: center; vertical-align:top; }
-.wf-section h3{ width: 100%; font-size: 12pt;}
-.wf-section img{ width: 60%; margin: 10% 0;}
+.workflow{width:100%; position: relative;}
+.workflow h2{ margin:15% 0 10% 0;}
+
+.wf-section{ width: 28%; margin:0 2% 25% 2%; display: inline-block; text-align: center; vertical-align:top; }
+.wf-section h3{ width: 100%; font-size: 14pt; letter-spacing: 0; color: #7016cb; display: block;}
+.wf-section img{ width: 60%; margin: 20% 0;}
 .wf-section p{ width: 100%; font-size: 10pt; line-height: 13pt;}
 
 
@@ -359,23 +370,155 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
 
 
 
+
+
+/*****************************************/
+/*********** CONTACT SECTION *************/
+/*****************************************/
+
+
 /* Contact Area */
-.contact-area{text-align: center; background-color: #f4f4f4; width:100%;}
+.contact-area{ background-color: #f4f4f4; width:100%; text-align: center;}
 .contact-area h2{ line-height:20pt; font-size: 18pt; padding-top:10%;}
-.contact-area button{margin:5%; padding: 3% 8%; border-radius: 7pt; border:none; background-color: #7016cb; color: #fff; margin-bottom:10%; cursor: pointer;}
-.contact-area button:hover{background-color: #4b197c;}
+.contact-area button{margin:5% auto; padding: 3% 8%; border-radius: 7pt; border:none; background-color: #7016cb; color: #fff; margin-bottom:10%;}
+.contact-area button:hover{background-color: #4b197c; }
 .contact-pop{display:none;}
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 90; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 16pt;
+}
+.modal-content h4{margin:10% 0 5% 0; color: #4b197c; text-align:left;}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 
-/* packages section */
-.packages{ width:90%; margin:0 auto;}
-.package{background:#f4f4f4; width: 30%; margin: 0.5%; display: inline-block; border-radius: 7pt; vertical-align: top;}
-.package h3{padding:15% 5%; margin: 0; border-radius: 7pt 7pt 0 0; background-color: #7016cb; text-align: center; font-size: 12pt; color: #fff; text-transform: uppercase; letter-spacing: 0pt;}
-.package ul{padding:10% 5%; margin: 0; list-style: none; font-size:9pt;}
-.package ul li{padding:5% 2%; margin:0; border-bottom: 1px #999 solid; text-align: center;}
-.package ul li:last-child{padding:5% 0; margin:0; border-bottom:none; text-align: center;}
-.price{font-weight:bold; font-size:12pt; text-align: center;}
-.package button{padding:15% 5%; margin: 0; width:100%; font-size:10pt; font-weight:bold; letter-spacing: -0pt; color: #fff; background-color: #000; border-radius: 0 0 7pt 7pt; border:0;}
-.package button:hover{background-color: #7016cb;}
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35%;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: left;
+}
+label.container { margin:3% 0; padding:2% 0 2% 25pt; text-align: left; font-size:10pt;}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color:  #7016cb;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* Style inputs */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 7pt;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: #7016cb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 7pt;
+  cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {
+  background-color: #4b197c;
+}

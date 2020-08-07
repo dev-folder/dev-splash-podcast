@@ -10,6 +10,7 @@
     <title>ImSoFunky Podcasts</title>
     <link href="https://imsofunky.com/podcasts/" rel="canonical">
     <link href="https://imsofunky.com" rel="home">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css'>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -62,26 +63,31 @@
 
       <p>10,000 podcasts launched each week, lets make yours stand out in the crowd!</p>
 
+      <p>There are thousands of new podcasts launched each month. Don't get lost in the mix. Having professionally designed podcast cover artwork will not only get you noticed but it can:</p>
+
+      <ul>
+        <li>Attract listeners and encourage them to press play</li>
+        <li>Encourages listeners to hit subscribe</li>
+        <li>Help you secure better quality guests for your show</li>
+        <li>Get you noticed by potential sponsors</li>
+        <li>Make you stand out amongst other shows in your category</li>
+      </ul>
+
       <h3>This Pack Includes</h3>
       <ul class="serv">
-        <li>This is one</li>
-        <li>This is one</li>
-        <li>This is one</li>
+        <li>You will have a one-on-one conference call with our lead designer to learn about you and your show.</li>
+        <li>You will have a chance to make requests and recommendations pertaining to your cover artwork.</li>
+        <li>Our design team will work hard to create the perfect cover artwork for your podcast.</li>
+        <li>You will receive a square podcast cover art explicitly branded for your show and ready to upload to all podcast destinations.</li>
       </ul>
-      
-      <h3>Package Options</h3>
-      
+    
+      <h3>Package Options</h3>      
       <ul class="options">
         <li>One Off Design</li>
         <li>4 Graphic Designs each month Subscription</li>
         <li>Unlimited Graphics each month subscription</li>
       </ul>
-      
-      <div class="cta-artwork">
-        <button style="display: none;" class="ctabutton">Buy Service (1 off) <br>£0.00</button>
-        <button style="display: none;" class="ctabutton">Buy Service (monthly) <br>£0.00</button>
-      </div>
-      
+
       <button>Order Now</button>
 
       <div class="custom-shape-divider-top-1596633932">
@@ -106,8 +112,15 @@
     </div>
 
     <h2>Podcast Logo Design</h2>
-    <p>Have a podcast in mind but need a logo to start your branding off. We can provide you with a top quality logo that will set your podcast abouve the rest.</p>
-    <button>Buy Service <br>£0.00</button>
+    <p>Have a podcast in mind but need a logo to start your branding off. We can provide you with a top quality logo that will set your podcast above the rest.</p>
+
+    <ul>
+      <li>You will have a one-on-one conference call with our lead designer to learn about you and your show.</li>
+      <li>You will have a chance to make requests and recommendations pertaining to your Podcast Logo.</li>
+      <li>Our design team will work hard to create the perfect logo for your podcast.</li>
+      <li>You will receive your logo in various file formats required for use online and in print.</li>
+      <li>A Brand Style Guide (optional) to ensure your brand strategy is followed across all media platforms.</li>
+    </ul>
 
     <button>Order Now</button>
 
@@ -136,7 +149,27 @@
   <div class="social-media-branding">
 
     <h2>Podcast Social Media Branding</h2>
-    <p>Do you have your incredible artwork ready and looking to push it around your socials. purchase a one off or subscription to get regular adverts and images made for your social media profiles.</p>
+    
+    <p>So you have your incredible artwork ready and now you are looking to showcase it around your social media channels.</p>
+    <p>Pushing your brand across your social media platforms will build your brand awareness and keep your identity the same across the board.</p>
+
+    <h3 style="color: white">Platforms we cover</h3>
+    <img src="./assets/img/social/facebook-logo.svg" alt="Facebook Social Media Logo">
+    <img src="./assets/img/social/instagram.svg" alt="Instagram Social Media Logo">
+    <img src="./assets/img/social/twitter2.svg" alt="Twitter Social Media Logo">
+    <img src="./assets/img/social/pinterest-logo.svg" alt="Pinterest Social Media Logo">
+    <img src="./assets/img/social/linkedin-logo2.svg" alt="LinkedIn Social Media Logo">
+    <img src="./assets/img/social/snapchat.svg" alt="Snapchat Social Media Logo">
+    <img src="./assets/img/social/youtube-logo.svg" alt="YouTube Social Media Logo">
+
+    <h3>What You Get:</h3>
+    <ul>
+      <li>All images produced to current social media sizes at the time of your order.</li>
+      <li>Appropriate file types for the various social media platforms.</li>
+      <li>Profile Images for your social media platforms.</li>
+      <li>Cover/Header images for your profile page, podcast page and/or group.</li>
+    </ul>
+
     <button style="display: none;">Buy Service (1 platform) <br>£0.00</button>
     <button style="display: none;">Buy Service (3 platforms) <br>£0.00</button>
     <button style="display: none;">Buy Service (all platforms) <br>£0.00</button>
@@ -152,7 +185,6 @@
         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
     </svg>
 </div>
-
 
   <h2>Our Work Flow</h2>
 
@@ -183,70 +215,61 @@
   </div>
 </div>
 
+
+
+
+
+
+
 <div class="contact-area">
-
   <h2>Book in your artwork <br>creation today!</h2>
-  <button>Book Now</button>
-      <!--
-        This button loads a popup with a variety of questions for us to work with.
-        The popup will be mobile friendly.
-      -->
+  <button id="myBtn">Book Now</button>
+
+  <div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <p>Choose Your Package(s) by checking the box</p>
+
+        <h4>Podcast Design</h4>
+        <label class="container"> A One Off Design (£298) <input type="checkbox"> <span class="checkmark"></span> </label>
+        <label class="container"> 2 Designs Per Month Subscription (£298) <input type="checkbox"> <span class="checkmark"></span> </label>
+        <label class="container"> 4 Designs Per Month Subscription (£298) <input type="checkbox"> <span class="checkmark"></span> </label>
+        <label class="container"> Unlimited Designs Per Month Subscription (£298) <input type="checkbox"> <span class="checkmark"></span> </label>
+
+        <h4>Logo Design</h4>
+        <label class="container"> Logo design with 2 Revisions (£90)<input type="checkbox"> <span class="checkmark"></span> </label>
+
+        <h4>Social Media Design</h4>
+        <label class="container"> 1 Platform or one off design (£40)<input type="checkbox"> <span class="checkmark"></span> </label>
+        <label class="container"> All platforms One Off Design (£40)<input type="checkbox" > <span class="checkmark"></span> </label>
+        <label class="container"> Unlimited designs Subscription (£120)<input type="checkbox"> <span class="checkmark"></span> </label>
+        
+        <input type="submit" value="Submit">
+      </form>
+
+    </div>
+
+  </div>
+
 </div>
-
-<div class="contact-pop">
-  <form>
-    <input>
-  </form>
-</div>
-
-
 
 </main>
-
-<!--
-<section class="packages">
-  <div class="package">
-    <h3>Bronze Pack</h3>
-    <ul>
-      <li>Monthly Edits</li>
-      <li>Suitable for guests</li>
-      <li>Monthly Edits</li>
-      <li>Suitable for guests</li>
-      <li>Monthly Edits</li>
-      <li>Suitable for guests</li>
-      <div class="price">£39pm</div>
-    </ul>
-    <button>ORDER NOW</button>
-  </div>
-
-  <div class="package">
-    <h3>Silver Pack</h3>
-    <ul>
-      <li>Monthly Edits</li>
-      <li>Suitable for guests</li>
-      <li>Monthly Edits</li>
-      <li>Suitable for guests</li>
-      <li>Monthly Edits</li>
-      <li>Suitable for guests</li>
-      <div class="price">£39pm</div>
-    </ul>
-    <button>ORDER NOW</button>
-  </div>
-
-  <div class="package">
-    <h3>Gold Pack</h3>
-    <ul>
-      <li>Monthly Edits</li>
-      <li>Suitable for guests</li>
-      <li>Monthly Edits</li>
-      <li>Suitable for guests</li>
-      <li>Monthly Edits</li>
-      <li>Suitable for guests</li>
-      <div class="price">£39pm</div>
-    </ul>
-    <button>ORDER NOW</button>
-  </div>
--->
 
 
 </section>
@@ -258,7 +281,15 @@
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
 <script src='./assets/js/flickity.pkgd.js'></script>
-<script  src="./script.js"></script>
+<script  src="./assets/js/script.js"></script>
 
 </body>
 </html>
+
+
+
+      
+<div class="cta-artwork">
+  <button style="display: none;" class="ctabutton">Buy Service (1 off) <br>£0.00</button>
+  <button style="display: none;" class="ctabutton">Buy Service (monthly) <br>£0.00</button>
+</div>
