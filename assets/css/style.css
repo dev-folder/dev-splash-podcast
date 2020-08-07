@@ -14,7 +14,7 @@ button{padding: 3% 8%; border-radius: 7pt; border:none; color: #fff; cursor: poi
 button:hover{}
 
 header{background:#7016cb; z-index:2; padding:0; position: relative; display: block; height:100vh; width:100%;}
-header h1{width:50%; margin:2%; position: absolute; top: 10%; left: 2%; font-size: 19pt; text-transform: uppercase; line-height: 33pt; color:#fff;}
+header h1{width:50%; margin:2%; position: absolute; top: 15%; left: 2%; font-size: 19pt; text-transform: uppercase; line-height: 27pt; color:#fff;}
 header .pink-box{background-color:#cb16b3; width: 90%; z-index:6;}
 header img.logo{width:120px; margin:4%;}
 header img.logo:hover{filter: invert(1);}
@@ -24,7 +24,7 @@ header img.phone{width:100%; display:block; z-index:40;}
 .custom-shape-divider-top-1596537588 svg { position: relative; display: block; width: calc(104% + 1.3px); height: 110px;}
 .custom-shape-divider-top-1596537588 .shape-fill { fill: #7016cb;}
 
-a.ctabutton { z-index: 5; font-family: 'Raleway', sans-serif; font-size: 18px; color: #fff; display: inline-block; text-decoration: none; padding: -1em; background: #cb16b3; overflow: hidden; padding-left: 1em; position: absolute;  top: 68%;  left: 8%;  border:none; }
+a.ctabutton { z-index: 5; font-family: 'Raleway', sans-serif; font-size: 18px; color: #fff; text-decoration: none; padding: -1em; background: #cb16b3; overflow: hidden; padding-left: 1em; position: absolute;  top: 68%;  left: 4%;  border:none; }
 a.ctabutton:after { z-index: 5; display: inline-block; background: #e23ecc; content: "»"; position: relative; margin-left: 1em; padding: .6em 1em; }
 a.ctabutton:hover {background: #e23ecc; text-decoration: none; color: #fff;}
 
@@ -38,8 +38,6 @@ main p{margin-bottom:5%;}
 /************ PODCAST SECTION ************/
 /*****************************************/
 
-
-/* Podcast design section */
 .podcast-design{width:100%; margin:0 auto; padding:0; color: #f4f4f4; position: relative;}
 .podcast-design h2{text-align: center; display: block; background-color: #141414;}
 
@@ -117,16 +115,12 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
   }
 }
 
-/* buttons, no circle */
 .flickity-prev-next-button { width: 60px; height: 60px; background: transparent; opacity: 0.6; }
 .flickity-prev-next-button:hover { background: transparent; opacity: 1; }
-/* arrow color */
 .flickity-prev-next-button .arrow { fill: white; }
 .flickity-prev-next-button.no-svg { color: white; }
-/* closer to edge */
 .flickity-prev-next-button.previous { left: 0;}
 .flickity-prev-next-button.next { right: 0; }
-/* hide disabled button */
 .flickity-prev-next-button:disabled { display: none; }
 
 .custom-shape-divider-bottom-1596556625 {
@@ -189,10 +183,12 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
 /************* LOGO SECTION **************/
 /*****************************************/
 
-/* logo design section */
-.logo-design{background: #7016cb; width:100%; position: relative; padding:0 0 90% 0;}
+.logo-design{background: #7016cb; color: #f4f4f4; width:100%; position: relative; padding:0 0 25% 0;}
 .logo-design h2{padding:25% 0 0 5%; width: 80%; line-height: 28pt; color: #f4f4f4; text-align: left;}
 .logo-design p{padding:5% 0; width: 80%; text-align: left; margin-left:5%;}
+.logo-design ul{width: 70%; margin:0 auto;}
+.logo-design button{text-align:left !important; margin:0 auto;}
+
 .logo-design .logo-bg{filter: drop-shadow(-25px 25px 60px #000000); -webkit-filter: drop-shadow(-25px 25px 60px #000000); -moz-filter: drop-shadow(-25px 25px 60px #000000); z-index:1; }
 .logo-design img{width: 50%; height:auto; position: absolute; top:50%; right: 0px; z-index:1; clip-path: polygon(61% 0, 100% 2%, 100% 95%, 58% 100%, 0 65%, 11% 23%); }
 .logo-design button{background: #f4f4f4; /* #f7a626 */ color:#7016cb; font-weight:bold; font-size:11pt; text-transform: uppercase; text-align: right;  z-index:5; padding: 2.5% 5%; margin:2%;}
@@ -278,10 +274,10 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
   background: #e23ecc;
   width:100%; 
   padding:10% 5%; 
-  position: relative; 
+  position: relative;
 }
-.social-media-branding h2{margin-bottom: 8%;}
-.social-media-branding h3{margin-top: 8%;}
+.social-media-branding h2{margin-bottom: 8%; color: #f4f4f4; line-height:26pt;}
+.social-media-branding h3{margin-top: 8%; color:#f4f4f4;}
 .social-media-branding ul{width: 80%; margin: 0 auto;}
 .social-media-branding li{margin: 5% 0;}
 .social-media-branding p{}
@@ -369,15 +365,10 @@ box-shadow: 0px 18px 31px -5px rgba(0,0,0,0.7);
 }
 
 
-
-
-
 /*****************************************/
 /*********** CONTACT SECTION *************/
 /*****************************************/
 
-
-/* Contact Area */
 .contact-area{ background-color: #f4f4f4; width:100%; text-align: center;}
 .contact-area h2{ line-height:20pt; font-size: 18pt; padding-top:10%;}
 .contact-area button{margin:5% auto; padding: 3% 8%; border-radius: 7pt; border:none; background-color: #7016cb; color: #fff; margin-bottom:10%;}
