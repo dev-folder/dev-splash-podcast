@@ -88,11 +88,11 @@ button{padding: 3% 8%; border-radius: 7pt; border:none; color: #fff; cursor: poi
 
 
 header{background:#7016cb; z-index:2; padding:0; position: relative; display: block; height:100vh; width:100%;}
-header h1{width:50%; margin:2%; position: absolute; top: 15%; left: 2%; font-size: 22pt; text-transform: uppercase; line-height: 32pt; color:#fff;}
+header h1{width:50%; margin:2%; position: absolute; top: 15%; left: 2%; font-size: 20pt; text-transform: uppercase; line-height: 29pt; color:#fff;}
 header .pink-box{background-color:#cb16b3; width: 90%; z-index:6;}
 header img.logo{width:120px; margin:4%; text-align:center;}
 header img.logo:hover{filter: invert(1);}
-header img.phone{width:100%; z-index:4; background:red;}
+header img.phone{width:100%; z-index:4;}
 
 .custom-shape-divider-top-1596537588 { position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; background-color:#141414; z-index:-1; }
 .custom-shape-divider-top-1596537588 svg { position: relative; display: block; width: calc(104% + 1.3px); height: 110px;}
