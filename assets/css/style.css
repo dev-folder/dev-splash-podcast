@@ -84,15 +84,23 @@ button{padding: 3% 8%; border-radius: 7pt; border:none; color: #fff; cursor: poi
   to { transform: translate3d(0,0,0); transition: transform .3s cubic-bezier(0, .52, 0, 1); } 
 }
 
-/* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** */
+/* ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** ********** 354x610 ********** */
 
 
-header{background:#7016cb; z-index:2; padding:0; position: relative; display: block; height:100vh; width:100%;}
-header h1{width:50%; margin:2%; position: absolute; top: 70pt; left: 2%; font-size: 20pt; text-transform: uppercase; line-height: 27pt; color:#fff;}
-header .pink-box{background-color:#cb16b3; width: 90%; z-index:6;}
+header{background:#7016cb; z-index:2; padding:0; position: relative; display: block; height:auto; width:100%;}
 header img.logo{width:120px; margin:4%; text-align:center;}
 header img.logo:hover{filter: invert(1);}
-header img.phone{width:100%; z-index:4;}
+
+.header-content{display: grid; grid-template-columns: 1fr 1fr; color:#fff;padding-bottom:20%;}
+.header-content h1{font-size: 1.2em; padding-left:5%; text-transform: uppercase; line-height: 1.4em; color:#fff; z-index:4; width:100%;}
+.header-content img{width:100%; z-index:3;}
+/*
+.header-content{display: grid; grid-template-columns: 50% 50%;}
+.header-content .header-text{grid-column:1;}
+.header-content .header-text h1{font-size: 1.2em; text-transform: uppercase; line-height: 1.4em; color:#fff; z-index:4;}
+.header-content .phone{grid-column:2;}
+.header-content .phone img{width:100%; z-index:3;}
+*/
 
 .custom-shape-divider-top-1596537588 { position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; background-color:#141414; z-index:-1; }
 .custom-shape-divider-top-1596537588 svg { position: relative; display: block; width: calc(104% + 1.3px); height: 110px;}
